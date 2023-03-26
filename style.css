@@ -1,14 +1,33 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto:wght@100&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
     font-family: 'Alkatra', cursive;
 }
+
 :root{
     --main-color: #00b4fc;
 }
-h1{
-    color: var(--main-color);
+
+/* --------------------------------------------------HEADER-------------------------------------------------------------------------- */
+header{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--main-color);
+    align-items: center;
+    height: 100px;
+    /* câu lệnh chia header */
+    justify-content: space-between; 
+}
+
+header a .logo{
+    text-decoration: none;
+    padding-left: 50px;
 }
