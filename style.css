@@ -221,3 +221,65 @@ section {
   font-size: 1.5rem;
   text-decoration: line-through;
 }
+
+/*---------------------START SERVICES ------------------------*/
+
+.heading{
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.heading span{
+  font-size: 5rem;
+  background:rgba(68, 158, 207, 0.169);
+  color: #6495ED;
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+  text-transform: uppercase;
+
+}
+
+.heading span.space{
+  background: none;
+}
+
+.services .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.services .box-container .box{
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  overflow: hidden;
+  /* box-shadow: 0  1rem 2rem rgba(0,0,0,0.1); */
+  cursor: pointer;
+}
+
+.services .box-container .box i{
+  padding: 1rem;
+  font-size: 5rem;
+  color: var(--main-color);
+}
+
+
+.services .box-container .box h3{
+  padding: 1rem;
+  font-size: 3rem;
+  color: 	#000099;
+}
+
+.services .box-container .box p{
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  color: #666;
+}
+
+.services .box-container .box:hover{
+  box-shadow: 0 1rem 2rem rgba(74, 125, 220, 0.753);
+}
+
+/*----------------------ENDS SERVICES---------------------------*/
