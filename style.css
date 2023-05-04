@@ -6,7 +6,7 @@
 }
 
 html{
-    font-family: 'Alkatra', cursive;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 :root{
@@ -15,7 +15,7 @@ html{
 
 /* --------------------------------------------------HEADER-------------------------------------------------------------------------- */
 header{
-    position: fixed;
+    position: relative;
     display: flex;
     top: 0;
     left: 0;
@@ -26,8 +26,136 @@ header{
     /* câu lệnh chia header */
     justify-content: space-between; 
 }
+/* css gallery start */
 
-header a .logo{
-    text-decoration: none;
-    padding-left: 50px;
+
+
+section{
+    padding: 1rem 9%;
+    
 }
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0;
+  }
+  .heading span {
+    font-size: 3.5rem;
+    /* background: rgba(255, 165, 0, 0.2); */
+    background: #333333;
+    color: var(--main-color);
+    border-radius: 0.5rem;
+    padding: 0rem 1rem;
+  }
+
+.btn{
+display: inline-block;
+margin-top: 1rem;
+background-color: orange;
+color: #fff;
+padding: .2rem 1rem;
+border: .1rem solid orange;
+cursor: pointer;
+text-decoration: none;
+font-size: .9rem;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* ----------------------------------------------gallery------------------------------------------- CSS */
+.gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallery .box-container .box{
+   overflow: hidden; 
+   box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+   border: 1rem solid #fff;
+   border-radius: .5rem;
+   flex: 1 1 20rem;
+   height: 20rem; 
+   position: relative;
+   
+}
+
+.gallery .box-container .box img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+ }
+ 
+.gallery .box-container .box .content{
+position: absolute;
+top: -100%;
+left: 0;
+height: 100%;
+width: 100%;
+text-align: center;
+background: rgba(0, 0, 0, .7);
+padding: 2rem;
+padding-top: 3rem;
+transition: top 0.5s ease-in-out;
+}
+
+.gallery .box-container .content h3{
+    color: orange;
+}
+
+.gallery .box-container .content p{
+    color: #fff;
+}
+
+.gallery .box-container:hover > .box:not(:hover){
+    transform: scale(0.98);
+    z-index: 1;
+}
+.gallery .box-container .box:hover .content{
+    top: 0;
+    cursor: pointer;
+    transform: scale(1.5);
+        -webkit-transform: scale(1); 
+        -moz-transform: scale(1.5); 
+        -o-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+}
+
+#content .about {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+    margin-top: -64px;
+    
+}
+#content .heading {
+    
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+#content .sub-heading {
+    text-align: center;
+    font-style: italic;
+    opacity: 60%;
+    font-size: 15px;
+    margin-bottom: 47px;
+}
+#content .info-text {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+
+#img-imgpage{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/*-------------------------------------------- end gallery css  ---------------------------------------------------*/
